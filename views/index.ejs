@@ -5,9 +5,24 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <img src=<%=pic %>/>
-    <p><%= bio %></p>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    <div><img src=<%=pic %>/></div>
+    <div><p><%= bio %></p></div>
+    <div><h2><%=skillstitle %></h2></div>
+<div><ul><% for (skill in skills) { %>
+
+<li><%= skills[skill] %></li>
+
+<% } %>
+
+</ul></div>
+<div><h2><%=hobbiestitle %></h2></div>
+<div><ul><% for (hobbie in hobbies) { %>
+<li><%= hobbies[hobbie] %></li>
+
+
+<% } %>
+</ul></div>
   </body>
 </html>
